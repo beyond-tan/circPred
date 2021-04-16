@@ -22,7 +22,7 @@ Each line in input file should match the following JSON format:
 id: transcript id,
 chro: chr1 or...,
 strand: + or -,
-up_stream: [up_strat, up_end, up_seq],
+up_stream: [up_start, up_end, up_seq],
 down_stream: [down_start, down_end, down_seq]
 }
 NOTICE: as for id, we should have unique name for the transcript.
