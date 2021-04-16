@@ -19,13 +19,13 @@ python circPred.py --model_dir models/ --ref_dir reference/ --input_file data/te
 Input file data format:
 Each line in input file should match the following JSON format:
 {
-“id”: transcript id,
-“chro”: ‘chr1’ or...
-“strand”: ‘+’ or ‘-’
-“up_stream”: [up_strat, up_end, up_seq],
-“down_stream”: [down_start, down_end, down_seq]
+id: transcript id,
+chro: chr1 or...,
+strand: + or -,
+up_stream: [up_strat, up_end, up_seq],
+down_stream: [down_start, down_end, down_seq]
 }
-NOTICE: as for “id”, we should have unique name for the transcript.
+NOTICE: as for id, we should have unique name for the transcript.
 
 Output file:
 transcript-id	prediction-label	prediction-probability
