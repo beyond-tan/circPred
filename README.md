@@ -8,27 +8,27 @@ Requirements:
 4. sklearn
 5. joblib
 
-How to use the tool, the command as follows:
-python circPred.py --model_dir models/ --ref_dir reference/ --input_file data/test_data --output_file data/pred_result.txt
+How to use the tool, the command as follows:  
+python circPred.py --model_dir models/ --ref_dir reference/ --input_file data/test_data --output_file data/pred_result.txt  
 
---model-dir: The directory to load the trained models for prediction
---ref-dir: The directory to load the AtoI file and Alu file
---input_file: JSON input file for predicting data
---output_file: The output file used to store the prediction label and probability of input data
+--model-dir: The directory to load the trained models for prediction  
+--ref-dir: The directory to load the AtoI file and Alu file  
+--input_file: JSON input file for predicting data  
+--output_file: The output file used to store the prediction label and probability of input data  
 
-Input file data format:
-Each line in input file should match the following JSON format:
-{
-id: transcript id,
-chro: chr1 or...,
-strand: + or -,
-up_stream: [up_start, up_end, up_seq],
-down_stream: [down_start, down_end, down_seq]
-}
-NOTICE: as for id, we should have unique name for the transcript.
+Input file data format:  
+Each line in input file should match the following JSON format:  
+{  
+id: transcript id,  
+chro: chr1 or...,  
+strand: + or -,  
+up_stream: [up_start, up_end, up_seq],  
+down_stream: [down_start, down_end, down_seq]  
+}  
+NOTICE: as for id, we should have unique name for the transcript.  
 
-Output file:
-transcript-id	prediction-label	prediction-probability
-transcript1	0	0.1983548
-transcript2	1	0.8192133
+Output file:  
+transcript-id	prediction-label	prediction-probability  
+transcript1	0	0.1983548  
+transcript2	1	0.8192133  
 
